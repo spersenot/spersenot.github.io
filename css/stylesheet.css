@@ -1,0 +1,236 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto";
+    color: #333;
+}
+/* COLORS
+
+#a2d7d8
+#bfe1bf
+#ededea
+#fcd059
+#de5842
+#f72e2a
+
+*/
+/**************************************************************************************************/
+/* HOME PRESENTATION ******************************************************************************/
+/**************************************************************************************************/
+#home-wrapper {
+    height: calc(100% - 80px);
+    background: url("../img/backgrounds/Black_background.jpg") center bottom fixed;
+/*    background: url("../img/backgrounds/Wallpaper-l-039.jpg") center bottom fixed;*/
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+#home-wrapper h1 {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    top: 20%;
+    
+    text-transform: uppercase;
+    font-family: "Titillium Web";
+    font-weight: 900;
+    font-size: 68px;
+}
+#home-wrapper h1 span {
+    display: block;
+    line-height: 68px;
+}
+
+#home-wrapper h1 #name { color: #fcd059; letter-spacing: 2px; }
+#home-wrapper h1 .job { color: #bfe1bf; letter-spacing: -2px; }
+#home-wrapper h1 .salesforce { color: #a2d7d8; letter-spacing: 2px; }
+#home-wrapper h1 .desc { font-family: "Roboto"; margin: 20px 0 0 10%; width: 80%; color: #ededea; font-size: 28px; text-transform: none; font-weight: 500; }
+
+#corner-left, #corner-right {
+    position: absolute;
+    top: 350px;
+}
+#corner-left { left: 0;}
+#corner-right { right: 0;}
+
+#corner-left img, #corner-right img {
+    width: 100%;
+    height: 100%;
+}
+
+/**************************************************************************************************/
+/* HEADER NAV *************************************************************************************/
+/**************************************************************************************************/
+header {
+    height: 80px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    
+    transition: all 0.3s ease 0s;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header.small{ height: 50px}
+
+header #logo {
+    width: 100px;
+    float: left;
+}
+
+header #menu {
+    width: calc(100% - 200px);
+    float: left;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header.small #menu {
+    padding: 15px 0;
+}
+
+header #menu a{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #333;
+    position: relative;
+    font-weight: 700;
+    
+    transition: all 0.3s ease 0s;
+}
+header #menu a:hover{
+    color: #de5842;
+}
+
+header #menu a .hover-bottom {
+    position: absolute;
+    top: calc(100% + 5px);
+    height: 1px;
+    right: 50%;
+    width: 0;
+    background-color: #de5842;
+    
+    transition: all 0.3s ease 0s;
+}
+/* SQUARE EFFECT
+header #menu a .hover-bottom {
+    position: absolute;
+    top: calc(100% + 5px);
+    height: 1px;
+    right: -5px;
+    width: 0;
+    background-color: #de5842;
+    
+    transition: all 0.5s ease 0s;
+}
+header #menu a .hover-top {
+    position: absolute;
+    bottom: calc(100% + 5px);
+    height: 1px;
+    left: -5px;
+    width: 0;
+    background-color: #de5842;
+    
+    transition: all 0.5s ease 0s;
+}
+header #menu a .hover-left {
+    position: absolute;
+    right: calc(100% + 5px);
+    height: 0;
+    bottom: -5px;
+    width: 1px;
+    background-color: #de5842;
+    
+    transition: all 0.5s ease 0s;
+}
+header #menu a .hover-right {
+    position: absolute;
+    left: calc(100% + 5px);
+    height: 0;
+    top: -5px;
+    width: 1px;
+    background-color: #de5842;
+    
+    transition: all 0.5s ease 0s;
+}
+
+header #menu a:hover .hover-top {
+    width: calc(100% + 10px);
+}
+header #menu a:hover .hover-bottom {
+    width: calc(100% + 10px);
+}
+header #menu a:hover .hover-left {
+    height: calc(100% + 10px);
+}
+header #menu a:hover .hover-right {
+    height: calc(100% + 10px);
+}
+*/
+header #menu a:hover .hover-bottom {
+    width: calc(100% + 10px);
+    right: -5px;
+}
+
+
+/**************************************************************************************************/
+/* CONTENT HOME ***********************************************************************************/
+/**************************************************************************************************/
+.header-fixed { margin-top: 80px; }
+
+section {
+    padding: 80px 0;
+}
+
+.bg-grey { background-color: #ededea }
+.bg-white { background-color: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd }
+
+section .section-title { margin-bottom: 50px; }
+section p {
+    color: #555555;
+    font-size: 16px;
+}
+
+section h2 {
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.centered h2 {
+    margin-top: 0;
+}
+.centered div {
+    color: #555555;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.centered .row img { max-width: 160px; }
+
+section.centered .row img .citation { font-size: 16px; }
+
+section.centered .row img.v-align {
+    max-width: 100%;
+    height: 180px;
+}
+/* SALESFORCE SECTION *****************************************************************************/
+
+/* SALESFORCE COMPETENCES SECTION ******************************************************************/
